@@ -1,0 +1,100 @@
+\ProvidesPackage{rhreport}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{wrapfig}
+\usepackage{indentfirst} % indent first paragraph of each section (not really correct for academic papers, but follows more common business convention)
+
+\usepackage{pdfpages,caption,geometry} %enables you to add pdf and a caption
+
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  total={170mm,257mm},
+  left=20mm,
+  top=40mm,
+  bottom=30mm,
+}
+
+\usepackage{fontspec}
+\setmainfont{Exo 2}[%
+    Path            =   fonts/,
+    Extension       =   .otf,
+    UprightFont     =   *-Regular,
+    ItalicFont      =   *-Italic,
+    BoldFont        =   *-Bold,
+    BoldItalicFont  =   *-BoldItalic,
+    FontFace        =   {black}{n}{*-Black},
+    FontFace        =   {black}{it}{*-BlackItalic},
+]
+
+\usepackage{xcolor}
+\definecolor{RHgrey}{RGB}{101,101,101}
+\definecolor{RHblue}{RGB}{7,163,216}
+\definecolor{RHgreen}{RGB}{30,165,43}
+\definecolor{RHyellow}{RGB}{251,210,0}
+\definecolor{code}{RGB}{200,200,200}
+\definecolor{textbox}{RGB}{200,255,200}
+\definecolor{captiongreen}{RGB}{50,165,60}
+\definecolor{RHolive}{RGB}{239, 240, 125}
+  
+\usepackage{sectsty}
+\sectionfont{\color{RHblue}} 
+\subsectionfont{\color{RHblue}}
+\subsubsectionfont{\color{RHblue}}
+
+\usepackage{caption}
+\usepackage[font={color=captiongreen,small,bf},figurename=Fig.,labelfont={small,it}]{caption}
+\usepackage{subcaption} %font color RHgreen, figure label is italic
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{multicol} % Allows multiple columns to be used on the fly
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\color{RHgrey} \leftmark}
+\rhead{\color{RHgrey} \rightmark}
+\fancyfoot[LE]{\color{RHgrey} \thepage \hspace{5mm} \scriptsize AERIAL RIPARIAN SOLID WASTE MAPPING}
+\fancyfoot[RO]{\color{RHgrey} \scriptsize AERIAL RIPARIAN SOLID WASTE MAPPING \hspace{3mm} \normalsize \thepage}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=RHblue, % to match the Ramani Huria blue text
+  filecolor=magenta,      
+  urlcolor=cyan,
+  pdftitle={RH Interim Report 4},
+  %pdfpagemode=FullScreen,
+}
+%\urlstyle{same}
+
+\usepackage{footnote}
+\makesavenoteenv{tabular} %For creating linked footnotes in a table
+
+\usepackage[framemethod=tikz]{mdframed} %For creating a tight box around text
+
+
+\usepackage{lipsum} 
+
+\title{Ramani Huria Interim Report 4}
+\author{Humanitarian OpenStreetMap Team}
+\usepackage[nodayofweek,level]{datetime}
+\newdate{date}{15}{04}{2019}
+\date{\displaydate{date}}
+
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup} % For creating vertically centered rows of logos
+
+\usepackage{tocloft}
+
+\setcounter{tocdepth}{2} % Table of Contents includes only sections and subsections, not subsubsections.
+
+\setlength{\parskip}{1em} %sets the paragraph separation to 1em.
+
+\usepackage{titlesec} %allows you to edit paragraph spacing in section, subsection and subsubsection
+\titlespacing\section{-5pt}{12pt plus 4pt minus 2pt}{-5pt plus 2pt minus 2pt}
+\titlespacing\subsection{-5pt}{12pt plus 4pt minus 2pt}{-5pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{-5pt}{12pt plus 4pt minus 2pt}{-5pt plus 2pt minus 2pt}
