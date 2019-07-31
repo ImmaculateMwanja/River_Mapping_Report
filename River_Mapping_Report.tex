@@ -21,7 +21,7 @@ This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica 
 
 \newpage
 \section{Executive Summary}
-\begin{multicols}{3}
+\begin{multicols}{2}
 
 \lipsum[0-3]
 
@@ -44,6 +44,7 @@ Drone flights consistently track and record spatial data relating to their own t
 OMDTZ  combined drone flights and the existing spatial data to conduct a rapid desktop analysis of planned residential and commercial zoning and transport economics as they relate to solid waste management services.
 
 Specifically, spatial analysis allowed the team to quickly present:
+
 \begin{itemize}
     \item Any building or point on a map within the political boundaries of Dar es Salaam that are defined as planned or unplanned.
     \item The complexity of transport from any building in Dar es Salaam to Pugu Kinyamwezi dump site---accounting for two-axle vehicle access, road surface and type, distance and time. 
@@ -108,13 +109,39 @@ Thereafter, OpenDataKit (ODK) Collect,Kobo Toolbox & QGIS trainings were provide
 
 \section{Activity 1: UAV Data Collection}
 
-\subsection{Use of Unmanned Aerial Vehicles (UAVs), or Drones}
+\subsection{Overview}
 
 Drone is the popular term for Unmanned Aerial Vehicles (UAV) that uses Unmanned Aerial System (UAS) for different purposes according to the manufacturer Operation manual or User preference. 
 
 Several drone flights were to be  conducted along five major rivers of Dar es Salaam including  Msimbazi, Mpiji, Tegeta, Kizinga and Mzinga rivers, spanning 60 linear kilometers of waterways of Dar es Salaam’s critical water arteries. Msimbazi river was not mapped since it  was  already mapped by World bank. The drone flights provided a digital photographic mark-up of the current status of Dar es Salaam’s waterways. 
 
 Drone flights for data collection were conducted within 44 calendar days from 5th April to 18th May 2019, contingent  to the Tanzania Civil Aviation Authority (TCAA) and Ministry of Defence permissions and suitable weather. All technical personnel and equipment required for this assignment are present in Dar es Salaam (site location). 
+
+\subsection{UAV Flights}
+At the outset of this project, drone flights were planned to be  conducted along five major rivers of Dar es Salaam including the  Msimbazi, Mpiji, Tegeta, Kizinga and Mzinga rivers, spanning 60 linear kilometers of waterways of Dar es Salaam’s critical water arteries. All planned flights were conducted over the course of this project with the exception of the Msimbazi river, where permissions were difficult to obtain due to the proximity of sections of the river to the airport and because high quality drone imagery was available from the World Bank. 
+
+The drone flights provided a digital photographic mark-up of the current status of Dar es Salaam’s waterways. 
+
+Drone flights enable studying any aggregations of waste/informal dumps that are on the banks of the waterways within fifty metres of its bank on either side.Such data is presented as three-dimensional imagery of waste aggregations, further assisting the study team to estimate rough waste volumes.  
+
+Drone flights consistently track and record spatial data relating to their own trips and correspond the GIS data with a set of other socio-political and economic indicators, to ease further analysis. This includes:
+\begin{itemize}
+    \item The corresponding political division i.e. subward, ward and municipal boundaries—drone flight spatial data overlaid existing socio-political spatial data indicating, via simple desktop analysis, the political constituency that governs each spatial area the drone covers. This allows users to correspond with an informal/illegal dump with the relevant political office that governs the area.
+    \item The corresponding density of the geography they are flown over i.e. buildings per sq km/population per sq km via census data.
+\end{itemize}  
+
+Drone flights for data collection were conducted within 44 calendar days from 5th April to 18th May 2019, contingent  to the Tanzania Civil Aviation Authority (TCAA) and Ministry of Defence permissions and suitable weather. All technical personnel and equipment required for this assignment are present in Dar es Salaam (site location).   
+OMDTZ  combined drone flights and the existing spatial data to conduct a rapid desktop analysis of planned residential and commercial zoning and transport economics as they relate to solid waste management services. 
+
+Specifically, spatial analysis allowed the team to quickly present:
+\begin{itemize}
+\item Any building or point on a map within the political boundaries of Dar es Salaam that are defined as planned or unplanned.   
+\item The complexity of transport from any building in Dar es Salaam to Pugu Kinyamwezi dumpsite━accounting for two-axle vehicle access, road surface and type, distance and time. 
+\end{itemize} 
+
+Datasets provided audiences with vital data on the inequality of solid waste management infrastructure by geography, as well as providing service providers and government with valuable data on what types of transport modes can be employed to service residents and businesses in planned and unplanned geographies of the city.
+
+Thereafter, OpenDataKit (ODK) Collect,Kobo Toolbox & QGIS Trainings were provided to Nipe Fagio staff. OMDTZ provided an in-depth training on how to upload, analyse and present visual data relating to waste hotpots, informal dumps and cleaning activities.
 
 \subsection{Tools}
 
@@ -138,17 +165,142 @@ Drone flights for data collection were conducted within 44 calendar days from 5t
     eBee drones (version Plus and X) were used during the river mapping project to track and record spatial data related to their own trips and corresponding GIS data with a set of other socio-political and economic indicators to ease further analysis. Drone imagery is the output of Unmanned Aerial Vehicle (UAV) carrying a camera to conduct imaging mission. The image is then GeoTagged with Drone Log data that is stitched together to get the output according to the pilot’s desire (Orthomosaic). After the processes explained above, the images were compressed for further use on light processing machines like mobile phones for mapping exercises of trash point location identification.
     \end{multicols}
     
+    \subsubsection{Flight Planning}
+    This is the process of identifying the area that data collection will be conducted using the UAV i.e. the place where the drone will be flown for aerial imaging. This process is done in the office using base map data from the ground station. Some key notes to consider during flight planning after identifying where the mission will be conducted include: where the takeoff will be set, en route, landing, name of the mission i.e. after creating one, setting up the overlapping━lateral and longitudinal. While abiding with the rules of aviation, you have to set your ceiling drone━top geofencing, setting up the working radius━horizontal geofencing---this is the distance from where your ground station will be located to the end in lateral. Flight planning will be done with reference to the client’s needs but in communication with Civil Aviation Authority or any other responsible board.
+    
+    \subsubsection{Pre-Flight Checklist}
+    
+         \begin{figure} %[H] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/image18.jpg}
+            \caption{Pre-Flight check for the ebee plus before take-off}
+        \end{figure}
+    
+    This involved various activities that should be considered prior to the flight in order to make sure everything is ready for the flight to be conducted. This includes aircraft visual inspection, inspecting for controlling parts i.e. if they are working as desired, verifying of planned mission to see the feasibility with the actual area, Takeoff and Landing approach verification, inspecting for SD card status, choose good battery and plug in to the drone, camera function, etc. to make sure drones and other tools are set.
+    
+    \subsubsection{Take-Off and Landing}
+    
+    In this process, the drone was launched for mission to take pictures. When the mission was completed, the drone was commanded to return to its home-way point. The time for the mission to be completed depends on the weather and the power of the battery.
+    
+        \begin{figure} %[H] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/image6.jpg}
+            \caption{Launching of ebee plus drone for take-off}
+        \end{figure}
+    
+    \subsubsection{Data Export}
+    This process was done after the drone flights whereby images were exported by copying them from the SD card in the drone to the computer. In exporting the BBX, the flight’s log was recorded from the drone and kept in the flight control memory in a computer for post-processing. 
+    
+    \subsubsection{Data Gathering}
+    
+    \subsubsection{Data Processing and Analysis}
+    After gathering data from the drone and base station, the following had to be done to make the data useful:
+    \begin{itemize}
+        \item Data from the camera/images were synchronized with drone data (flight logs) using emotion━a program for flight planning and controlling the ebee drone that was used, synchronization of images with flight logs aimed to geo-tag them; this will enable the images to have x-latitudes, y-longitudes and z-elevation information, therefore match with Coordinate Reference System (CRS).
+        \item Pix4D software was used to get dataset from single geo-tagged images. The system from the software stitched all the images together and combined them with the data from the GPS base station to increase the accuracy of x, y and z values and came up with orthomosaic data and Digital Surface Model (DSM). The output from the second process will be in regards to what the system has been requested to process and the processing time will vary according to the output needed since they depend on the details needed to provide the desired output.
+    \end{itemize}
+    
+    The generated orthomosaic data will become useful for mbtiles generation to be used for low processing devices like mobile phones. The data is also useful for digitization using JOSM or further analysis with QGIS. DSM is useful for further analysis suitable for waste management alongside rivers as well as analysis of flooded areas near the river banks.
+    
+\subsection{Results}
+    Achievements
+
+    \subsubsection{Target rivers were successfully mapped with the addition of the other six areas.}
+
+    Four out of five rivers i.e. Mpiji, Kizinga, Mzinga and Tegeta rivers were successfully mapped with the addition of other six flight areas---Mpiji small, Ng'ombe, Gama, Base, Kimara A and Kimara B---showing the extent of the trash as shown in the table below:
+
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|}  
+            \hline
+        	\bfseries AOI & \bfseries Area (SqKm) & \bfseries Total Area & \bfseries Acquisition Status & \bfseries Processing Status\\
+        	\hline
+            Mpiji Main & 14.357 & 1914 & Complete & Complete\\
+            \hline
+            Mpiji Small & 4.768 & 644 & Complete & Complete\\
+            \hline
+            Kizinga & & 2147 & Complete & Complete \\
+            \hline
+            Mzinga & 11.676 & 2019 & Complete & Complete \\
+            \hline
+            Tegeta & 9.275 & 1306 & Complete & Complete \\
+            \hline
+            Ng’ombe & & & & \\
+            \hline
+            Gama & 17.389 & 2775 & Complete & Complete \\
+            \hline
+            Kimara A & 7.574 & 1654 & Complete & Complete \\
+            \hline
+            Kimara B & 8.8268 & 1707 & Complete & Complete \\
+            \hline
+          
+          \end{tabular}
+        \end{center}
+        
+    \subsubsection{High-Resolution Imagery}
+    
+        \begin{figure} %[H] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/image1.jpg}
+            \caption{High-resolution drone imagery showing the location of trash and trash extent along the river and its adjacent areas}
+        \end{figure}
+        
+    The map produced will be from 5cm GSD of high resolution imagery which shows the extent of trash along the river clearly and the adjacent areas that meet the satisfaction of being used in the Nipe Fagio project.
+    
+    \subsubsection{High-Accuracy Datasets}
+    
+    For high accurate data set we use Real Time Kinematics (RTK) system. The  drones used were RTK activated and we also employed the use of GPS RTK base station to improve the output being generated regarding x, y, and z values once the data set has been processed.
+    
+    RTK is the satellite navigation technique used to enhance the precision of position data derived from Global Navigation Satellite System (GNSS) such as GPS, GLONASS, Galileo and BeiDou. RTK uses measurements of radio waves in addition to the information content of the signal and relies on a single reference station of interpolated virtual stations to provide real-time corrections up to a centimeter level of accuracy. With reference to GPS, the system is well known as Carrier Phase Enhancement or CPGPS and is very well applicable in precision land surveying, hydrographic survey and in UAV navigation and surveying.
+    
+        \begin{figure} %[H] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/image13.png}
+            \caption{Real Time Kinematics (RTK) uses satellites and a base station to pinpoint the location of the UAV images with very high accuracy}
+        \end{figure}
+    
+     \subsubsection{Community UAV Awareness and Training}
+     Informal education and training on drones were provided to youth from primary and secondary schools, local leaders and community members. Topics included an overview of river mapping, its importance to the development of our community, applicability of drones and river mapping, how to build and operate a drone, its functions and how drone imagery is useful to the community in solving different problems.
+     
+        \begin{figure} %[H] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/image11.jpg}
+            \caption{A group of youth and community members in the field during drone data collection at the Kimara A site}
+        \end{figure}
+        
+\subsection{Challenges: MOVE TO END}
+    \subsubsection{Weather}
+    
+        \begin{figure} %[H] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/image9.jpg}
+            \caption{Sudden storms and inclement weather often interrupted drone flights and data collection}
+        \end{figure}
+        
+    During drone flight in Tegeta river, the weather suddenly changed from a sunny morning to a rainy afternoon. The team had to command the drone to go back to the home-way point of landing in order to avoid crashing of the drone since the battery was highly drained in fighting against the heavy wind and rainfall.
+    
+    \subsubsection{Permit Delays}
+     Getting permits should be the frist step taken in preparation for the flight. In order to conduct drone flights, you need to acquire a permit to operate your vehicle while abiding with the laws governing aviation as well as the underlined government regulations.  Granting flight approval from respective authorities is time-consuming since the approval for operation must go through the Ministry of Defence and the Tanzania Civil Aviation Authority (TCAA) and Intelligent Security Service (ISS).
+     
+     \subsubsection{Inadequate Take-Off and Landing Areas Onsite}
+     Drone flights need enough area for taking off and landing i.e. areas with no obstacles such as trees, power lines, communication towers, etc. The team used satellite images prior to the flights to determine which fields to be used that are closer to mission blocks and suitable for landing. If the field that was identified is not suitable, the team would shift to another field provided that it is close to the mission block as well. The main challenge that the team faced was unsuitability of fields for landing the drones.
+     
+\subsection{Lessons Learned: MOVE TO END}
+    In order to minimize the cost of finding a suitable field, it is important to identify areas prior to visiting them and meeting some criteria for the type of flight that is going to be conducted using tags such as field size, surface area of the field, proximity of obstacles, and UAV aerodrone suitability for conventional Takeoff and Landing or Vertical Takeoff and Landing.
+    
 \section{Activity 2: Remote Data Creation}
 
+\subsection{Overview}
+The broad purpose of this work was to provide Nipe Fagio, I4ID and other partners with high-quality and interactive spatial data to better understand solid waste management and service quality across all five municipalities of Dar es Salaam main focus of the activities will be done along all of the city’s key five rivers which are Mpiji river, Tegeta river, Mzinga river, Kizinga river and Msimbazi river.
+
 \subsection{Methodology}
-
-    \lipsum[0-2]
-
-\subsection{Methodology}
-
-    \begin{multicols}{2}
-    \lipsum[0-5]
-    \end{multicols}
+    After the acquisition of high-resolution imagery with a 5cm resolution identification of trash piles followed:
+    
+    \begin{enumerate}
+        \item First of all our GIS leads Dorica and Iddy played with imagery on QGIS software to find out what was the common types of waste. They came up with different types of waste such as "plastic_hard", "plastic_soft", household metal, tyres and mixed as well.
+        Adding to that they found out the trash points were located near the rivers, in the rivers, along the rivers and others were located within the residences as well.
+        \item The second task was the creation of a vector layer( geopackage format) called trash data of which all traced trash polygons with their information were added to it. \item Three mappers with GIS knowledge were then assigned to identify where the trash points are and digitizing them. Apart from that, they identified type of waste and where the trash points located.
+    \end{enumerate}
+    
 
 \subsection{Output & Quality Assurance}
 
