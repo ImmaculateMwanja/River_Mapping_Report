@@ -4,28 +4,38 @@
 \begin{document}
 \thispagestyle{empty}
 \begin{center}
-    \includegraphics[width=1\textwidth]{images/image1.jpg}
+    \includegraphics[width=0.9\textwidth]{images/image1.jpg}
 \end{center}
 
 \begin{center}
-  \Huge \color{RHblue} \textbf {Aerial Riparian}
+  \huge \color{RHblue} \textbf {Aerial Riparian}
 \textbf{Solid Waste Mapping}
 \end{center}
-\medskip
+\bigskip
 
 \vbox{
   \centering
   Prepared for:
-  \vcenteredhbox{\includegraphics[width=2cm]{}}
-  and { }
-  \vcenteredhbox{\includegraphics[width=7cm]{images/World_Bank_Group_logo.png}}
-  \
-  
+  \vcenteredhbox{\includegraphics[width=5cm]{images/Palladium_Logo.jpg}}
   by:
-  \vcenteredhbox{\includegraphics[width=4cm]{HOT_logo_with_text.png}}
+  \vcenteredhbox{\includegraphics[width=3cm]{images/OMDTZ_logo.jpg}}
   % \maketitle
   
 }
+\bigskip
+This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica Mugusi, Tonny John, Immaculate Mwanja, Aaron Eubank, Hawa Adinani, Innocent Maholi, Ivan Gayton, William Evans
+
+\begin{center}
+
+\vcenteredhbox{\includegraphics[height=1cm]{images/World_Bank_Group_logo.png}}
+\vcenteredhbox{\includegraphics[height=0.8cm]{images/HOT_logo_with_text.png}}
+
+\
+
+\vcenteredhbox{\includegraphics[height=1.6cm]{images/Nipe_Fagio_logo.png}}
+\vcenteredhbox{\includegraphics[height=1.6cm]{images/Tanzania_logo.png}}
+\end{center}
+
 
 %\begin{figure} %[H] 
 %   \centering
@@ -35,16 +45,9 @@
 %\title{Aerial Riparian Solid Waste Mapping}
 %\author{OpenMap Development Tanzania}
 
+%\date{August 2019}
 
-\date{August 2019}
-
-
-\maketitle
-
-\bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip
-\bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip
-
-This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica Mugusi, Tonny John, Immaculate Mwanja, Aaron Eubank, Hawa Adinani, Innocent Maholi, Ivan Gayton, William Evans
+%\maketitle
 
 
 \newpage
@@ -121,9 +124,7 @@ This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica 
         \item \textbf{\href{http://www.nipefagio.co.tz/}{Nipe Fagio}\footnote{\url{http://www.nipefagio.co.tz/}}}
     
         Nipe Fagio, “Give Me the Broom” in Swahili, is a civil society organization founded in 2013. It aims to empower individuals, especially the youth, the civil society, the private sector and government to build lasting change towards turning Tanzania into a clean and sustainable country, conscious through education of its role on waste management and reduction of pollution (air, water, soil).
-    
-        Nipe Fagio staff were trained by OMDTZ on the use of OpenStreetMap (OSM) local tools for data collection and to use Geographic Information Systems (GIS) to address the issue of waste in the city under their Zero Waste project. QGIS software was executed after the training.
-
+        
         \item \textbf{\href{https://www.i4idtz.org/}{Institutions for Inclusive Development}\footnote{\url{https://www.i4idtz.org/}} (I4ID)}
     
         I4ID are Tanzanian institutions working to the systems that drive poverty and exclusion. They bring actors together, to design and implement innovative solutions that have the potential for large scale impact.
@@ -404,7 +405,8 @@ This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica 
     \end{multicols}
 
 \subsection{Objectives}
-    The general objective of the training was to facilitate Nipe Fagio staff on the use of OpenStreetMap (OSM) local tools for data collection and to use Geographical Information System (GIS) to address the issue of waste in the city under the Zero Waste project using QGIS software which was executed after the training.
+    The general objective of the training was to facilitate Nipe Fagio staff on the use of OpenStreetMap (OSM) local tools for data collection and to use Geographic Information Systems (GIS) to address the issue of waste in the city under the Zero Waste project using QGIS software which was executed after the training.
+
     
     The following were specific objectives of the training:
         
@@ -504,7 +506,7 @@ This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica 
 \section{Activity 4: Routing}
 
 \subsection{Overview}
-    After the collection of drone data and analysis of solid waste sites was complete, the final deliverable of this project was to create a routing scheme giving travel from various points in the city of Dar Es Salaam to the Pugu Hills Dump site in _________.  This routing scheme could potentially be use
+    After the collection of drone data and analysis of solid waste sites was complete, the final deliverable of this project was to create a routing scheme giving travel from various points in the city of Dar Es Salaam to the Pugu Hills Dump site in [FILL HERE].  This routing scheme could potentially be use
 
 \subsection{Tools and Techniques Used}
     While many companies and mapping platforms have their own routing schemes (like Google or Bing), this exercise used only open data and open-source tools to create the routing model. The following tools and data sources were used in the creation of this schema:
@@ -515,9 +517,14 @@ This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica 
         \item \textbf{PostGIS}
         An extension to PostgreSQL required for storing and manipulating spatial data.  
         \item \textbf{QGIS}
-        An open-source Geographic Information System used as the graphic shell for our PostGIS work
-        \item \textbf{PostGIS}
-        \item \textbf{PostGIS}
+        An open-source Geographic Information System used as the graphic shell for routing visualization and as the graphic user interface for the Postgres database
+        \item \textbf{OpenStreetMap}
+        A free and open
+        \item \textbf{PGRouting}
+        An extension to PostgreSQL that has tools for geospatial routing. It is dependent on the PostGIS extension.
+        \item \textbf{osm2pgrouting}
+        A program within the PGrouting ecosystem that allows for simple import and creation of network datasets from OpenStreetMap data.
+        
     \end{itemize}
 
 \subsubsection{PostgreSQL and PGRouting}
