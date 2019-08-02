@@ -16,25 +16,27 @@
 \vbox{
   \centering
   Prepared for:
-  \vcenteredhbox{\includegraphics[width=5cm]{images/Palladium_Logo.jpg}}
+  \vcenteredhbox{\includegraphics[width=4.5cm]{images/Palladium_Logo.jpg}}
   by:
   \vcenteredhbox{\includegraphics[width=3cm]{images/OMDTZ_logo.jpg}}
   % \maketitle
   
 }
-\bigskip
-This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica Mugusi, Tonny John, Immaculate Mwanja, Aaron Eubank, Hawa Adinani, Innocent Maholi, Ivan Gayton, William Evans
 
+\bigskip \medskip
+{ } { } { } { } { } { } Implementing partners: 
 \begin{center}
-
-\vcenteredhbox{\includegraphics[height=1cm]{images/World_Bank_Group_logo.png}}
-\vcenteredhbox{\includegraphics[height=0.8cm]{images/HOT_logo_with_text.png}}
+\vcenteredhbox{\includegraphics[height=1.5cm]{images/Uhuru_Labs_logo.png}} { } { } { } { } { }
+\vcenteredhbox{\includegraphics[height=2cm]{images/Nipe_Fagio_logo.png}}
 
 \
 
-\vcenteredhbox{\includegraphics[height=1.6cm]{images/Nipe_Fagio_logo.png}}
-\vcenteredhbox{\includegraphics[height=1.6cm]{images/Tanzania_logo.png}}
+\vcenteredhbox{\includegraphics[height=0.8cm]{images/World_Bank_Group_logo.png}} { } { } 
+\vcenteredhbox{\includegraphics[height=0.8cm]{images/HOT_logo_with_text.png}} { } { }
+\vcenteredhbox{\includegraphics[height=1.2cm]{images/Tanzania_logo.png}}
 \end{center}
+\bigskip
+This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica Mugusi, Tonny John, Immaculate Mwanja, Aaron Eubank, Hawa Adinani, Innocent Maholi, Ivan Gayton, William Evans
 
 
 %\begin{figure} %[H] 
@@ -509,28 +511,36 @@ This report was prepared by Glory Emanuel, Bornlove Ntikha, Iddy Chazua, Dorica 
     After the collection of drone data and analysis of solid waste sites was complete, the final deliverable of this project was to create a routing scheme giving travel from various points in the city of Dar Es Salaam to the Pugu Hills Dump site in [FILL HERE].  This routing scheme could potentially be use
 
 \subsection{Tools and Techniques Used}
-    While many companies and mapping platforms have their own routing schemes (like Google or Bing), this exercise used only open data and open-source tools to create the routing model. The following tools and data sources were used in the creation of this schema:
+    While many companies and mapping platforms have their own routing schemes (like Google or Bing), this exercise used only open data and open-source tools to create the routing model. 
+    
+    The following tools and data sources were used in the creation of this schema:
     
     \begin{itemize}
-        \item \textbf{PostgreSQL}
+        \item \textbf{PostgreSQL (Postgres)}
         A free and open-source relational database system used to host and manipulate the vector data collected during this project using the Structure Query Language (SQL).
         \item \textbf{PostGIS}
         An extension to PostgreSQL required for storing and manipulating spatial data.  
         \item \textbf{QGIS}
         An open-source Geographic Information System used as the graphic shell for routing visualization and as the graphic user interface for the Postgres database
-        \item \textbf{OpenStreetMap}
-        A free and open
+        \item \textbf{OpenStreetMap (OSM)}
+        A free and open map of the world built by volunteer user contributions. The road network of Dar Es Salaam was downloaded from this platform using the \href{https://export.hotosm.org/en/v3/}{HOT Export Tool}\footnote{https://export.hotosm.org/en/v3/}.
         \item \textbf{PGRouting}
         An extension to PostgreSQL that has tools for geospatial routing. It is dependent on the PostGIS extension.
         \item \textbf{osm2pgrouting}
-        A program within the PGrouting ecosystem that allows for simple import and creation of network datasets from OpenStreetMap data.
-        
+        A program within the PGrouting ecosystem that allows for simplified importing and creation of network datasets from OpenStreetMap data.
     \end{itemize}
+    
+    
 
 \subsubsection{PostgreSQL and PGRouting}
+    The following is a brief discussion on the process and methodology for routing using PostgreSQL and PGRouting. For step-by-step instructions on how to create your own network dataset, see our blog post on the topic at: \href{}{insert website here}
+    
+    PostgreSQL, PostGIS, and PGRouting, described in the section above, were three interrelated pieces essential to the swift processing of a network dataset of over 130,000 line segments. Dar Es Salaam road data for the network dataset was downloaded from OpenStreetMap via the HOT Export Tool and was fed into the osm2pgrouting tool, which took a few parameters, then easily built a well-functioning network dataset, yielding "nodes" and "ways" layers directly into the Postgres database.
+    
+    Postgres queries (detailed in the blog post) adapted from PGRouting documentation and training (detailed in the blog post) were then used 
 
 \subsubsection{Integrating Solid Waste Data with Routing Schema}
-
+    Routing from locations where solid waste data collected during the remote data collection phase could also easily be integrated 
 \subsection{Results}
 
 \section{Conclusion}
